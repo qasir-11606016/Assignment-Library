@@ -49,6 +49,8 @@ public class testMemberClass {
 		// creating an member class
 		member1.addFine(400);
 		double fine=member1.getFineAmount();
-		assertEquals(fine,400);
+		double actual=400;
+		
+		assertEquals(fine,actual,0.0);
 	}
 }
