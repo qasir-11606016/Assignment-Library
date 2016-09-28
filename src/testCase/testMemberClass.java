@@ -43,4 +43,12 @@ public class testMemberClass {
 		assertEquals(member1.getID(),45);
 	}
 	
+	@Test
+	public void testMemberConstructor6() {
+		IMember member1=new Member("Alex","smith","045055455","smith@gmail.com",45);
+		// creating an member class
+		member1.addFine(400);
+		double fine=member1.getFineAmount();
+		assertEquals(fine,400);
+	}
 }
