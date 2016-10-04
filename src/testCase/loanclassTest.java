@@ -50,13 +50,8 @@ public class loanclassTest {
 		String date2="10/09/2016";
 		
 		SimpleDateFormat df = new SimpleDateFormat("dd/mm/yyyy");
-		Date testDate = null;
-		try {
-			testDate = (Date) df.parse(date1);
-		} catch (ParseException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		Date testDate = (Date) df.parse(date1);
+		
 		Date testDate1=(Date) df.parse(date2);
 		
 		ILoan loan=new Loan(book1,member1,testDate,testDate1);
@@ -64,5 +59,5 @@ public class loanclassTest {
 		assertEquals(member1,loan.getBorrower());
 		
 	}
-
+	
 }
