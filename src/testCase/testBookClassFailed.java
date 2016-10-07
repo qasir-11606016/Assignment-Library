@@ -11,7 +11,7 @@ public class testBookClassFailed {
 
 	@Test
 	public void testgetauthor() {
-		IBook book1=new Book("Book1","title1","24",23);
+		IBook book1=new Book("Book1","book title","24",23);
 		assertEquals("blue",book1.getAuthor());
 		
 	}
