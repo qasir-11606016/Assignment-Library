@@ -7,11 +7,12 @@ import org.junit.Test;
 
 import junit.framework.Assert;
 import library.entities.Book;
+import library.entities.Loan;
 import library.interfaces.entities.IBook;
 
 public class testBookclass {
 
-	
+	IBook book1=new Book("Book1","title1","24",23);
 
 	@Test
 	public void testgetauthor() {
@@ -36,6 +37,12 @@ public class testBookclass {
 		assertEquals(23,book1.getID());
 	}
 	
-	
+	@Test
+	public void bookstatus(){
+		book1.getState();
+		assertEquals(book1.getState(),book1.getState());
+		
+		
+	}
 
 }
