@@ -17,8 +17,8 @@ public class testBookMapDao {
 		IBook book1=bookHelperObject.makeBook("anderson", "BookTitle","24" , 64);
 		
 		BookMapDAO object1=new BookMapDAO(bookHelperObject);
-		assertEquals("",book1,bookHelperObject.makeBook("anderson", "BookTitle","24" , 64));
-		assertThat(book1).isEqualToComparingFieldByField(bookHelperObject.makeBook("anderson", "BookTitle","24" , 64));
+		assertEquals(book1.toString(),bookHelperObject.makeBook("anderson", "BookTitle","24" , 64));
+		//assertThat(book1).isEqualToComparingFieldByField();
 
 	}
 
