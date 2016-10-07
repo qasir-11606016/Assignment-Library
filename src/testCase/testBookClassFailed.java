@@ -17,7 +17,7 @@ public class testBookClassFailed {
 	}
 	@Test
 	public void testGetTitle() {
-		IBook book1=new Book("Book1","title1","24",23);
+		IBook book1=new Book("James","Book title","24",23);
 		assertEquals("lostTitle",book1.getTitle());
 		
 	}
