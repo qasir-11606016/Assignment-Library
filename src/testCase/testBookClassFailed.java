@@ -30,4 +30,4 @@ public class testBookClassFailed {
 	public void testGetId(){
 		IBook book1=new Book("Book1","title1","24",23);
 		assertEquals(100,book1.getID());
-	}
+	}}
