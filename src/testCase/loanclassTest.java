@@ -56,7 +56,7 @@ public class loanclassTest {
 		
 		ILoan loan=new Loan(book1,member1,testDate,testDate1);
 		
-		assertEquals(member1,loan.getBorrower());
+		assertSame(member1,loan.getBorrower());
 		
 	}
 	
