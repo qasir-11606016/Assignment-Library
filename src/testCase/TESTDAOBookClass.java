@@ -22,7 +22,7 @@ public class TESTDAOBookClass {
 	IBook book2=new Book("Book1","taitle1","24",24);
 	IBook book3=new Book("Book1","taitle1","24",25);
 	IBookHelper bookHelperObject =new BookHelper();
-	IBook book15=bookHelperObject.makeBook("anderson", "BookTitle","24" , 64);
+	//IBook book15=bookHelperObject.makeBook("anderson", "BookTitle","24" , 64);
 	
 	BookMapDAO object1=new BookMapDAO(bookHelperObject);
 	
