@@ -40,11 +40,16 @@ public class loan {
 	public void testGetBook() {
 		assertEquals(aaa.getBook(),bbb.getBook());
 		
-	}@Test
+	}
+	@Test
 	public void loanGetBarrower() {
 		assertEquals(aaa.getBorrower(),bbb.getBorrower());
 		
 	}
-	
+	@Test
+	public void loanGetState() {
+		assertEquals(aaa.getState(),bbb.getState());
+		
+	}
 
 }
