@@ -61,9 +61,9 @@ public class TESTDAOBookClass {
 		assertEquals(as,asa);
 		
 	}
-	public void test4() {
-		List<IBook> as =object1.;
-		List<IBook> asa =object2;
+	public void test5() {
+		List<IBook> as =object1.findBooksByTitle("taitle1");
+		List<IBook> asa =object2.findBooksByTitle("taitle1");
 		assertEquals(as,asa);
 		
 	}
