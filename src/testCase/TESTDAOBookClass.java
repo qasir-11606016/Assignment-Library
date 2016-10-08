@@ -25,6 +25,8 @@ public class TESTDAOBookClass {
 	//IBook book15=bookHelperObject.makeBook("anderson", "BookTitle","24" , 64);
 	
 	BookMapDAO object1=new BookMapDAO(bookHelperObject);
+	BookMapDAO object2=new BookMapDAO(bookHelperObject);
+
 	
 	
 	Date a =new Date();
@@ -36,5 +38,13 @@ public class TESTDAOBookClass {
 		assertEquals(object1,object2);
 		
 	}
+	public void test2() {
+		object1.addBook("author", "title", "calling nomber");
+		object2.addBook("author", "title", "calling nomber");
+		
+		
+	}
+	
+	
 
 }
