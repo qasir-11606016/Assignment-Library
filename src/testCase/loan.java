@@ -51,5 +51,10 @@ public class loan {
 		assertEquals(aaa.getState(),bbb.getState());
 		
 	}
+	@Test
+	public void loanGetID() {
+		assertEquals(aaa.getID(),bbb.getID());
+		
+	}
 
 }
