@@ -36,5 +36,10 @@ public class loan {
 		assertEquals(aaa.isOverDue(),bbb.isOverDue());
 		
 	}
+	@Test
+	public void testGetBook() {
+		assertEquals(aaa.getBook(),bbb.getBook());
+		
+	}
 
 }
