@@ -68,5 +68,11 @@ public class TESTDAOBookClass {
 		assertEquals(as,asa);
 		
 	}
+	public void test6() {
+		IBook as =object1.getBookByID(23);
+		IBook asa =object2.getBookByID(23);
+		assertEquals(as,asa);
+		
+	}
 
 }
