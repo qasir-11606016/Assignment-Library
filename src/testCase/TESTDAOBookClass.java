@@ -41,6 +41,7 @@ public class TESTDAOBookClass {
 	public void test2() {
 		object1.addBook("author", "title", "calling nomber");
 		object2.addBook("author", "title", "calling nomber");
+		assertEquals(object1,object2);
 		
 		
 	}
