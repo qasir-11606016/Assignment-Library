@@ -50,7 +50,7 @@ public class TESTDAOBookClass {
 	public void test3() {
 		List<IBook> as =object1.findBooksByAuthor("book1");
 		List<IBook> asa =object2.findBooksByAuthor("book1");
-		assertEquals
+		assertEquals(as,asa);
 		
 		
 	}
