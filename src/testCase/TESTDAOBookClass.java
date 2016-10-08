@@ -22,7 +22,7 @@ public class TESTDAOBookClass {
 	IBook book2=new Book("Book1","taitle1","24",24);
 	IBook book3=new Book("Book1","taitle1","24",25);
 	IBookHelper bookHelperObject =new BookHelper();
-	
+	IBook book15=bookHelperObject.makeBook("anderson", "BookTitle","24" , 64);
 	
 	BookMapDAO object1=new BookMapDAO(bookHelperObject);
 	
@@ -31,8 +31,9 @@ public class TESTDAOBookClass {
 	Loan aaa=new Loan(book1,member1,a,a);
 
 	@Test
-	public void test() {
-		IBook book15=bookHelperObject.makeBook("anderson", "BookTitle","24" , 64);
+	public void test1() {
+		BookMapDAO object2=new BookMapDAO(bookHelperObject);
+		assertEquals(object1,object2);
 		
 	}
 
